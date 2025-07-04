@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Verimood - Yakında</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(135deg, #000428, #004e92);
+      height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: #fff;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 10px;
+      animation: fadeInDown 1s ease forwards;
+    }
+
+    h2 {
+      font-weight: normal;
+      font-size: 1.5rem;
+      color: #cbd5e1;
+      margin-bottom: 40px;
+      animation: fadeInDown 1.5s ease forwards;
+    }
+
+    .loader {
+      border: 8px solid rgba(255,255,255,0.1);
+      border-top: 8px solid #00c6ff;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      animation: spin 1s linear infinite;
+      margin-bottom: 30px;
+    }
+
+    .soon {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #ffe600;
+      animation: pulse 2s infinite;
+    }
+
+    .social {
+      margin-top: 40px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 10px 20px;
+      border-radius: 30px;
+      transition: background 0.3s;
+    }
+
+    .social:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .social a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .social img {
+      width: 24px;
+      height: 24px;
+      filter: brightness(0) invert(1);
+      margin-right: 8px;
+    }
+
+    .social span {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Verimood</h1>
+  <h2>İnternetin Ruh Hali!</h2>
+
+  <div class="loader"></div>
+  <p class="soon">ÇOK YAKINDA</p>
+
+  <div class="social">
+    <a href="https://instagram.com/verimood" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+      <span>@verimood</span>
+    </a>
+  </div>
+
+</body>
+</html>
